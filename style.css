@@ -104,13 +104,13 @@ article {
   opacity: 1;
 }
 
-.content h2 {
+.content h1 {
   font-size: 1.3rem;
   color: var(--neutral_white);
   margin-block: 0.9rem;
 }
 
-.content h2:hover {
+.content h1:hover {
   color: var(--primary_cyan);
   cursor: pointer;
 }
