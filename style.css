@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* RESET END*/
+
+/* COLORS */
+:root {
+  --primary_soft-blue: hsl(215, 51%, 70%);
+  --primary_cyan: hsl(178, 100%, 50%);
+
+  --neutral_main-bg: hsl(217, 54%, 11%);
+  --neutral_card-bg: hsl(216, 50%, 16%);
+  --neutral_line: hsl(215, 32%, 27%);
+  --neutral_white: hsl(0, 0%, 100%);
+}
+
+html,
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  min-height: 100vh;
+  background-color: var(--neutral_main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  width: 20rem;
+  margin: 1rem;
+}
+
+article {
+  background-color: var(--neutral_card-bg);
+  border-radius: 1rem;
+  padding: 1.5em;
+}
+
+.image {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.content h2 {
+  font-size: 1.3rem;
+  color: var(--neutral_white);
+  margin-block: 1rem;
+}
+
+.content p, .creator {
+  color: var(--primary_soft-blue);
+  font-weight: 300;
+}
+
+.content .rate {
+  color: var(--primary_cyan);
+}
+
+.flex-group {
+  margin-block: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price, .offer {
+  display: flex;
+  align-items: center;
+}
+
+.rate, .countdown {
+  margin-left: 0.5rem;
+}
+
+.creator span {
+  color: var(--neutral_white);
+}
+
+
+/* FOOTER START */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
