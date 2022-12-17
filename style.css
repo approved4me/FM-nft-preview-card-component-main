@@ -88,7 +88,7 @@ article {
 .content h2 {
   font-size: 1.3rem;
   color: var(--neutral_white);
-  margin-block: 1rem;
+  margin-block: 0.9rem;
 }
 
 .content p, .creator {
@@ -98,18 +98,18 @@ article {
 
 .content .rate {
   color: var(--primary_cyan);
+  font-weight: 600;
 }
 
 .flex-group {
-  margin-block: 1rem;
+  margin-block: 0.8rem;
   display: flex;
-  gap: 1rem;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.price, .offer {
+.price, .offer, .creator {
   display: flex;
   align-items: center;
 }
@@ -118,8 +118,21 @@ article {
   margin-left: 0.5rem;
 }
 
+
+.creator {
+  font-size: 1rem;
+  border-top: 1px solid var(--neutral_line);
+  padding-block: 1rem;
+}
 .creator span {
   color: var(--neutral_white);
+}
+
+.avatar  {
+  width: 35px;
+  border: 1.5px solid var(--neutral_white);
+  border-radius: 50%;
+  margin-right: 1rem;
 }
 
 
