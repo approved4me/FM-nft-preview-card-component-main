@@ -50,6 +50,7 @@ h6 {
 :root {
   --primary_soft-blue: hsl(215, 51%, 70%);
   --primary_cyan: hsl(178, 100%, 50%);
+  --primary_cyan_hover: hsl(178, 100%, 50%, 0.5);
 
   --neutral_main-bg: hsl(217, 54%, 11%);
   --neutral_card-bg: hsl(216, 50%, 16%);
@@ -83,6 +84,24 @@ article {
 .image {
   border-radius: 0.5rem;
   overflow: hidden;
+  position: relative;
+
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary_cyan_hover);
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+.overlay:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
 .content h2 {
