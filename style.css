@@ -91,6 +91,11 @@ article {
   margin-block: 0.9rem;
 }
 
+.content h2:hover {
+  color: var(--primary_cyan);
+  cursor: pointer;
+}
+
 .content p, .creator {
   color: var(--primary_soft-blue);
   font-weight: 300;
@@ -126,6 +131,11 @@ article {
 }
 .creator span {
   color: var(--neutral_white);
+}
+
+.creator span:hover {
+  color: var(--primary_cyan);
+  cursor: pointer;
 }
 
 .avatar  {
